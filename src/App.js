@@ -4,7 +4,6 @@ import './App.css';
 import {
   Box,
   Container,
-  Link,
   Typography,
 } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
@@ -25,6 +24,7 @@ const useStyles = makeStyles({
 
 function App() {
   const classes = useStyles();
+  console.log('build-injected arg:', process.env.REACT_APP_BUILD_ARG)
   
   return (
     <Container
@@ -43,26 +43,8 @@ function App() {
       >
         <img src={logo} className="App-logo" alt="logo" />
         <Typography className={classes.paragraph}>
-          Edit <code>src/App.js</code> and save to reload.
+          Injected build argument "REACT_APP_BUILD_ARG" {process.env.REACT_APP_BUILD_ARG ? `: ${process.env.REACT_APP_BUILD_ARG}` : "does not exist"}
         </Typography>
-        <Link
-          className={classes.link}
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-          underline="always"
-        >
-          Learn React
-        </Link>
-        <Link
-          className={classes.link}
-          href="https://material-ui.com/getting-started/templates/"
-          target="_blank"
-          rel="noopener noreferrer"
-          underline="always"
-        >
-          See more Material-UI templates
-        </Link>
       </Box>
     </Container>
   );
