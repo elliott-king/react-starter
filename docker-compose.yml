@@ -5,9 +5,9 @@ services:
   react:
     labels:
       shipyard.route: '/'
+    build:
       args:
         REACT_APP_BUILD_ARG: 'static docker-compose build arg'
-    build:
       context: .
     volumes:
       - './src:/app/src'
