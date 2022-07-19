@@ -13,4 +13,4 @@ services:
       - './src:/app/src'
       - './public:/app/public'
     ports:
-      - '5000:5000'
+      - '3000:3000'
