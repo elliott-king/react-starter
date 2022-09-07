@@ -1,0 +1,8 @@
+version: '3'
+
+# Meant to go on top of override-env-var.yaml
+services:
+  react:
+    environment:
+      ADDED_ON_OVERRIDE: "overriden_on_2"
+      ADDED_ON_OVERRIDE_TWO: "added"
