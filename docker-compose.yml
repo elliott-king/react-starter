@@ -5,6 +5,7 @@ services:
   react:
     labels:
       shipyard.route: '/'
+      shipyard.primary-route: true
     build:
       context: .
     volumes:
