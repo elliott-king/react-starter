@@ -3,9 +3,7 @@
 An React starter project that works with [Docker](https://www.docker.com/), [Docker Compose](https://docs.docker.com/compose/),
 and [Shipyard](https://shipyard.build) out of the box.
 
-## Includes
-
-- [React](https://github.com/facebook/react/) - JavaScript library for building user interfaces
+## Includess
 - [Material-UI](https://github.com/mui-org/material-ui) - React components for faster and simpler web development
 
 ## Dependencies
